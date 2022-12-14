@@ -15,4 +15,7 @@ public class PointService {
     public List<Point> allPoints(){
         return pointRepository.findAll();
     }
+    public void add(Point p ){
+        pointRepository.save(p);
+    }
 }
